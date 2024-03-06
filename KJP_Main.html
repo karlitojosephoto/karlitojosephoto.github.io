@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karlito Jose Photo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Karlito Jose Photo</h1>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Kahit buntis makukunan</p>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="photo-category">
+        <h3>Wedding Photos</h3>
+        <div class="photo-grid">
+            <img src="portfolio/Wedding1.jpg" alt="Wedding Photo 1">
+            <img src="portfolio/Wedding2.jpg" alt="Wedding Photo 2">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+    <div class="photo-category">
+        <h3>Same Day Edits (SDE)</h3>
+        <div class="sde-media-container">
+            <div class="sde-media">
+                <video width="100%" controls>
+                    <source src="portfolio/SDE1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="sde-media">
+                <video width="100%" controls>
+                    <source src="portfolio/SDE2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-carousel">
+        <div class="testimonial">
+            <p>"I highly recommended these talented and exceptional team!
+
+                Hinding hindi ako nagsisi simula sa prenup hanggang sa wedding. They have exceeded my expectation. All are high quality and meaningful photos.
+                
+                They are very professional to work with, at the same time they made us feel like we're family.
+                
+                Thank you Karlito Jose Photo team for capturing our very special moments!
+                
+                More power to your team!
+                God bless ya'll 🙏🩷"</p>
+            <span class="author">Lynzel Naguit Ogasawara</span>
+        </div>
+        <div class="testimonial">
+            <p>"If you’re looking for a photographer, I highly recommend Sir Karlito and his team. They are punctual and very talented. You won’t feel awkward during your photoshoot. Me and my wife are very happy with the results. You made our wedding extra special with your skills. Again kudos for the whole team! 🫶"</p>
+            <span class="author">Wilson Yap</span>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-form">
+        <form action="send_email.php" method="post">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="option">Select Option:</label><br>
+            <select id="option" name="option">
+                <option value="inquiry">Inquiry</option>
+                <option value="booking">Booking</option>
+            </select><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Karlito Jose Photo. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
