@@ -14,19 +14,54 @@ body {
 }
 
 header {
-    background-image: url('portfolio/cover.jpg');
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
+    background-color: #000; /* Set background color to black */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    padding: 50px 20px; /* Adjust padding as needed */
 }
 
 header h1 {
     font-size: 3em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    flex-grow: 1; /* Allow the header text to grow and fill remaining space */
+    text-align: center; /* Center the text horizontally */
+    color: #fff; /* Change text color to white */
+}
+
+.logo {
+    max-width: 200px; /* Adjust maximum width of the logo as needed */
+    float: left; /* Float the logo to the left */
+}
+
+.social-links {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center social links horizontally */
+    margin-top: 10px; /* Add margin between logo and social links */
+}
+
+.social-link {
+    margin: 0 5px; /* Add margin between social links */
+    border: 2px solid #fff; /* Add border */
+    border-radius: 20px; /* Make border slightly rounded */
+    overflow: hidden; /* Hide overflowing content */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.social-link:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.social-link img {
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 768px) {
+    .header-text {
+        display: none; /* Hide header text in mobile view */
+    }
 }
 
 section {
